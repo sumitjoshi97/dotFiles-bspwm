@@ -22,13 +22,13 @@ configuration {
 @import "colors.rasi"
 
 window {
-    transparency:                   "false";
+    transparency:                   "real";
     background-color:               @bg;
     text-color:                     @fg;
-	border:							3px;
-	border-color:					@border;
-    border-radius:                  8px;
-	width:							380px;
+	border:							2px 2px 2px 2px;
+	border-color:					@ac;
+    border-radius:                  10px;
+	width:							400px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -36,7 +36,7 @@ window {
 
 prompt {
     enabled: 						true;
-    padding:                        0px 0px 0px 0px;
+    padding:                        10px;
 	background-color: 				@al;
 	text-color: 					@bar;
 }
@@ -45,10 +45,8 @@ textbox-prompt-colon {
 	background-color: 				@al;
 	text-color: 					@bar;
 	expand: false;
-	str: "";
+	str: "";
 	font:							"Delugia 10";
-	padding: 0 10px;
-
 }
 
 entry {
@@ -58,7 +56,7 @@ entry {
     expand:                         true;
     horizontal-align:               0;
     placeholder:                    "Search...";
-    padding:                        10px 10px 10px 20px;
+    padding:                        0px 0px 0px 10px;
     blink:                          true;
 }
 
@@ -76,14 +74,13 @@ inputbar {
 
 listview {
     background-color:               @al;
-    padding:                        0px;
+    padding:                        10px;
     columns:                        1;
-    lines:                          5;
+    lines:                          8;
     spacing:                        5px;
     cycle:                          true;
     dynamic:                        true;
     layout:                         vertical;
-padding: 			10px 10px 10px 10px;	
 }
 
 mainbox {
@@ -100,8 +97,8 @@ element {
     background-color:               @al;
     text-color:                     @fg;
     orientation:                    horizontal;
-    border-radius:                  0px;
-    padding:                        14px 14px 14px -10px;
+    border-radius:                  10px;
+    padding:                        10px 10px 10px -17px;
 }
 
 element-icon {
@@ -117,10 +114,9 @@ element-text {
 }
 
 element selected {
-    background-color:               @bg4;
+    background-color:               @bga;
     text-color:                     @fg;
-	border:			    0px;
+	border:							0px 0px 0px 0px;
     border-radius:                  4px;
-    border-color:                  	@border;
-	padding: 		0;
+    border-color:                  	@ac;
 }
